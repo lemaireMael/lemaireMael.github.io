@@ -74,54 +74,6 @@
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
             <small class="pull-right">Irina Martin</small>
           </blockquote>
-          <h1 id="movement_analysis">Movement_analysis</h1>
-            <p>The aim of this program was to analyse the datas (pictures) of a security camera in order to detect the objects in movement.</p>
-            <a name="development_"/></p>
-            <h2 id="development">Development</h2>
-            <p>The idea is to analyze the pictures from a sequence in order to detects movements. For that, we have followed several distinct methods which will be explained in this GitHub.</p>
-            <p>To have an idea of the pictures we have to analyze, here are some of them (01, 10, 20, 30, 40 and 50) :</p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_01.jpg?raw=true" alt="alt text">
-            <img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_10.jpg?raw=true" alt="alt text">
-            <img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_20.jpg?raw=true" alt="alt text">
-            <img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_30.jpg?raw=true" alt="alt text">
-            <img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_40.jpg?raw=true" alt="alt text">
-            <img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_50.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 2: Photographs extracted from the sequence of pictures we had.</em></p>
-            <p>Here is our image of interest (the picture number 13) on which the analysis will be based : </p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/11_image_num_13.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 3: Photograph of interest.</em></p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/12_image_num_13-5.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 4: Photograph of the image number 8.</em></p>
-            <p>Then we have made the difference between the image number 13 and the image number 8 in order to see the vehicles which have moved between the two.</p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/13_diff_image___delta_i_5.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 5: Photograph of the image difference (image 13 - image 8).</em></p>
-            <p>By thresholded the image difference, we want to highlight the objects in movement between the 2 images.</p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/14_th_diff_image___delta_i_5___k_th_4.0.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 6: Photograph of the image difference (image 13 - image 8) thresholded.</em></p>
-            <p>Then, we do the average of all the images of the sequence.</p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/101_Image_of_averages.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 7: Photograph of the image average.</em></p>
-            <p>Then, we save the image of standard deviations.</p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/102_Image_of_standard_deviations.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 8: Photograph of the image of the standard deviations.</em></p>
-            <p>On the two past photographs, we can observe all the trajectories.</p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/113_abs_diff_image___delta_i_5.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 9: Photograph of the image (in absolute value).</em></p>
-            <p>From figure 9, we are able to obtain the three next figures :</p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/122_th_diff_image_minus_median___k_th_4.0.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 10: Photograph of the image minus median (thresholded).</em></p>
-            <p>We only obtain the pixels where there is movement. We use the median image because it allows us to have less noise.</p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/212_Ferm_Ouv_th_diff_image_minus_median___k_th_4.0.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 11: Photograph of the image minus median (thresholded) with Closing and then Opening.</em></p>
-            <p>By doing a Closing then Opening we are able to dilate white elements on a picture.</p>
-            <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/214_RCC8_Ferm_Ouv_th_diff_image_minus_median___k_th_4.0.jpg?raw=true" alt="alt text"></p>
-            <p><em>Figure 12: Photograph of the image minus median (thresholded) with Closing and then Opening and a 4-connexity.</em></p>
-
-            <h2 id="conclusion">Conclusion</h2>
-            <p>We liked this project because it corresponded to our expectations in terms of work to be done and it also allowed us to progress in the field of computer vision. </p>
-            <p>Indeed, we spent several hours on this project and chose to work in the following way : one of us coded and the other was there to proofread the code (and vice versa), this allowed us to progress much faster as we limited the errors of inattention. Of course it was not always the same person who coded and the same for the person in charge of proofreading.</p>
-            <p>Furthermore, we are aware that we could continue to develop this program in order to complete and improve it. The next step will be to develop an AI.</p>
-            
 
         </div>
       </div>
@@ -130,6 +82,68 @@
       
       <div class="col-md-8 col-md-offset-2 section-container-spacer">
         <div class="row">
+
+          <h1 id="movement_analysis">Movement_analysis</h1>
+
+          <p>The aim of this program was to analyse the datas (pictures) of a security camera in order to detect the objects in movement.</p>
+
+          <h2 id="development">Development</h2>
+
+          <p>The idea is to analyze the pictures from a sequence in order to detects movements. For that, we have followed several distinct methods which will be explained in this GitHub.</p>
+          <p>To have an idea of the pictures we have to analyze, here are some of them (01, 10, 20, 30, 40 and 50) :</p>
+
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_01.jpg?raw=true" alt="alt text">
+          <img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_10.jpg?raw=true" alt="alt text">
+          <img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_20.jpg?raw=true" alt="alt text">
+          <img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_30.jpg?raw=true" alt="alt text">
+          <img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_40.jpg?raw=true" alt="alt text">
+          <img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/seq1/seq1_50.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 2: Photographs extracted from the sequence of pictures we had.</em></p>
+
+          <p>Here is our image of interest (the picture number 13) on which the analysis will be based : </p>
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/11_image_num_13.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 3: Photograph of interest.</em></p>
+
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/12_image_num_13-5.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 4: Photograph of the image number 8.</em></p>
+          <p>Then we have made the difference between the image number 13 and the image number 8 in order to see the vehicles which have moved between the two.</p>
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/13_diff_image___delta_i_5.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 5: Photograph of the image difference (image 13 - image 8).</em></p>
+
+          <p>By thresholded the image difference, we want to highlight the objects in movement between the 2 images.</p>
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/14_th_diff_image___delta_i_5___k_th_4.0.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 6: Photograph of the image difference (image 13 - image 8) thresholded.</em></p>
+
+          <p>Then, we do the average of all the images of the sequence.</p>
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/101_Image_of_averages.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 7: Photograph of the image average.</em></p>
+
+          <p>Then, we save the image of standard deviations.</p>
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/102_Image_of_standard_deviations.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 8: Photograph of the image of the standard deviations.</em></p>
+
+          <p>On the two past photographs, we can observe all the trajectories.</p>
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/113_abs_diff_image___delta_i_5.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 9: Photograph of the image (in absolute value).</em></p>
+
+          <p>From figure 9, we are able to obtain the three next figures :</p>
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/122_th_diff_image_minus_median___k_th_4.0.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 10: Photograph of the image minus median (thresholded).</em></p>
+
+          <p>We only obtain the pixels where there is movement. We use the median image because it allows us to have less noise.</p>
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/212_Ferm_Ouv_th_diff_image_minus_median___k_th_4.0.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 11: Photograph of the image minus median (thresholded) with Closing and then Opening.</em></p>
+          
+          <p>By doing a Closing then Opening we are able to dilate white elements on a picture.</p>
+          <p><img src="https://github.com/Clerbout-Francois/Movement_analysis/blob/main/resultats/214_RCC8_Ferm_Ouv_th_diff_image_minus_median___k_th_4.0.jpg?raw=true" alt="alt text"></p>
+          <p><em>Figure 12: Photograph of the image minus median (thresholded) with Closing and then Opening and a 4-connexity.</em></p>
+
+          <h2 id="conclusion">Conclusion</h2>
+          <p>We liked this project because it corresponded to our expectations in terms of work to be done and it also allowed us to progress in the field of computer vision. </p>
+          <p>Indeed, we spent several hours on this project and chose to work in the following way : one of us coded and the other was there to proofread the code (and vice versa), this allowed us to progress much faster as we limited the errors of inattention. Of course it was not always the same person who coded and the same for the person in charge of proofreading.</p>
+          <p>Furthermore, we are aware that we could continue to develop this program in order to complete and improve it. The next step will be to develop an AI.</p>
+          
+
           <div class="col-xs-12 col-md-6">
             <img src="./assets/images/work001-02.jpg" class="img-responsive" alt="">
             <p>Menphis skyline</p>
